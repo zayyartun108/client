@@ -6,7 +6,7 @@ function Test() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://myapp.onrender.com/api/test/")
+    fetch("https://server-4z8u.onrender.com/api/test/")
       .then(res => res.json())
       .then(result => {
         setData(result);

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api=axios.create({
-    baseURL:"https://myapp.onrender.com/api/",
+    baseURL:"https://server-4z8u.onrender.com/api/",
 })
 api.interceptors.request.use((config)=>{
     const token=localStorage.getItem("access");
@@ -29,7 +29,7 @@ api.interceptors.response.use(
         const refresh = localStorage.getItem("refresh");
 
         const res = await axios.post(
-          "https://myapp.onrender.com/api/token/refresh/",
+          "https://server-4z8u.onrender.com/api/token/refresh/",
           { refresh }
         );
 
