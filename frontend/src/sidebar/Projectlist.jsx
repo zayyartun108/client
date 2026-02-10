@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../api";
-import "./sidebarcss/projectlist.css"
+import "./sidebarcss/Projectlist.css"
 
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar"
