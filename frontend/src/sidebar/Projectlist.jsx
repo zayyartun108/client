@@ -101,7 +101,7 @@ function Home() {
                                     <td>{x.project_title}</td>
                                     <td>{x.project_image_url}</td>
                                     <td><img
-                                        src={`http://127.0.0.1:8000/api${x.project_image_url}`}
+                                        src={`s://server-4z8u.onrender.com/api${x.project_image_url}`}
                                         alt=""
                                         width="60"
                                     /></td>

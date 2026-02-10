@@ -160,7 +160,7 @@ function Home() {
         <section className="home" >
           <div className="home-left">
             <div className="portfolio-img-border">
-              <img src={`http://127.0.0.1:8000/api${form.home_image_url}`} alt="Zayar Tun" className="portfolio-img" />
+              <img src={`s://server-4z8u.onrender.com/api${form.home_image_url}`} alt="Zayar Tun" className="portfolio-img" />
               <div></div>
             </div>
 
@@ -184,16 +184,16 @@ function Home() {
         <section className="about" ref={sectionRef} >
           <div className="about-left">
             <div className="img-border-circle">
-              <img src={`http://127.0.0.1:8000/api${form.home_image_url}`} className="about-img" />
+              <img src={`s://server-4z8u.onrender.com/api${form.home_image_url}`} className="about-img" />
 
             </div>
             <div className="img-border">
-              <img src={`http://127.0.0.1:8000/api${form.about_image_url}`} className="about-img" />
+              <img src={`s://server-4z8u.onrender.com/api${form.about_image_url}`} className="about-img" />
 
             </div>
 
             <div className="img-border-square">
-              <img src={`http://127.0.0.1:8000/api${form.about_image_url1}`} className="about-img" />
+              <img src={`s://server-4z8u.onrender.com/api${form.about_image_url1}`} className="about-img" />
 
             </div>
 
@@ -250,7 +250,7 @@ function Home() {
 
 
 
-            <img src={`http://127.0.0.1:8000/api${form?.skill_image_url}`} alt="Zayar Tun" className="skill-img" />
+            <img src={`s://server-4z8u.onrender.com/api${form?.skill_image_url}`} alt="Zayar Tun" className="skill-img" />
           </div>
           <div className="skill-right">
             <h1 className="skill-header">{form?.skill_header}</h1>
@@ -263,7 +263,7 @@ function Home() {
                   <div className="timeline-item rights" key={x.id}>
                     <div className="content">
                       <div className="icon-skill">
-                        <img src={`http://127.0.0.1:8000/api${x?.skill_icon_url}`} className="icon-skill-photo" />
+                        <img src={`s://server-4z8u.onrender.com/api${x?.skill_icon_url}`} className="icon-skill-photo" />
 
                         <h3 className="skill-title">{x.skill_title} . </h3>
                       </div>
@@ -301,7 +301,7 @@ function Home() {
             <div className="slides" ref={slides}>
               {project?.map((x) => (
                 <div className="slide">
-                  <img src={`http://127.0.0.1:8000/api${x.project_image_url}`} className="project-img" />
+                  <img src={`s://server-4z8u.onrender.com/api${x.project_image_url}`} className="project-img" />
                   <div className="project_name_list">
                     <h2 className="project-name1">Project Name : </h2>
                     <h2 className="project-name">{x.project_title}</h2>
@@ -357,7 +357,7 @@ function Home() {
                   social?.map((x) => (
                     <div className="icon">
                       <a href={x.social_link}>
-                        <img src={`http://127.0.0.1:8000/api${x?.social_icon}`} className="social_icon_size" />
+                        <img src={`s://server-4z8u.onrender.com/api${x?.social_icon}`} className="social_icon_size" />
                       </a>
 
 
