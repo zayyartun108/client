@@ -1,0 +1,96 @@
+:root {
+    /* Backgrounds */
+    --bg-main: #f8fafc;
+    /* Clean light background */
+    --bg-card: #ffffff;
+    /* Cards / sections */
+    --bg-soft: #eef2f7;
+    /* Soft section background */
+
+    /* Brand Colors */
+    --qprimary: #e02f2f;
+    --primary:rgb(59, 59, 255);
+    /* Sky Blue */
+    --secondary: #FFD700;
+    /* Mint Green */
+    --accent: #cdecf0;
+    /* Soft Purple */
+
+    /* Text */
+    --text-dark: #0f172a;
+    /* Deep Slate */
+    --text-muted: #64748b;
+    /* Muted Gray */
+
+    /* UI States */
+    --border: #e2e8f0;
+    --shadow: rgba(15, 23, 42, 1);
+}
+
+.sidebar {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--bg-main);
+    padding:70px 15px 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+.sidebarheader {
+    color: var(--primary);
+    font-size: 30px;
+
+}
+
+.sidebarlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.5s ease-out;
+    gap: 5px;
+
+}
+
+.li {
+    width: 17vw;
+    text-align: center;
+    background-color: var(--text-dark);
+    font-size: 20px;
+    color: var(--bg-main);
+    border-radius: 5px;
+    list-style: none;
+    padding:5px 10px;
+    
+
+
+}
+
+.active{
+    width: 17vw;
+    text-align: center;
+    background-color: var(--primary);
+    font-size: 20px;
+    color: var(--bg-main);
+    border-radius: 5px;
+    list-style: none;
+    padding:5px 0px;
+    
+
+}
+.sidebarsetting {
+    width: 100%;
+    background-color: var(--bg-main);
+    padding: 10px 30px;
+    color: var(--text-dark);
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    list-style: none;
+}

@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.signin-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-box {
+  background: #fff;
+  padding: 30px;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.signin-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.signin-input:focus {
+  border-color: #2a5298;
+}
+
+.signin-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.forgot {
+  color: #2a5298;
+  cursor: pointer;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 10px;
+  background: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-btn:hover {
+  background: #1e3c72;
+}
+
+.signin-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signin-text span {
+  color: #2a5298;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .signin-box{
+    width:90%;
+  }
+}
+.section-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch; /* mobile smooth */
+  scroll-behavior: smooth;
+  
+  
+}
