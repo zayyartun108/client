@@ -101,7 +101,7 @@ function Home() {
                                     <td>{x.project_title}</td>
                                     <td>{x.project_image_url}</td>
                                     <td><img
-                                        src={`s://server-4z8u.onrender.com/api${x.project_image_url}`}
+                                        src={`https://server-4z8u.onrender.com/api${x.project_image_url}`}
                                         alt=""
                                         width="60"
                                     /></td>

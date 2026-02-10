@@ -101,7 +101,7 @@ function Home() {
                                     <td>{x.social_name}</td>
 
                                     <td><img
-                                        src={`s://server-4z8u.onrender.com/api${x.social_icon}`}
+                                        src={`https://server-4z8u.onrender.com/api${x.social_icon}`}
                                         alt=""
                                         width="60"
                                     />
