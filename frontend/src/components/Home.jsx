@@ -15,7 +15,7 @@ function Home() {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
   const [social, setSocial] = useState([]);
-  const [service,setService]=useState([]);
+  const [service, setService] = useState([]);
   const [form, setForm] = useState({
     id: "",
     home_image_url: null,
@@ -48,13 +48,13 @@ function Home() {
   const slides = useRef(null);
   const prev = () => {
     slides.current.scrollBy({
-      left: -400,
+      left: slides.current.clientWidth * -1,
       behavior: "smooth",
     });
   };
   const next = () => {
     slides.current.scrollBy({
-      left: 400,
+      left: slides.current.clientWidth * 1,
       behavior: "smooth",
     })
 
@@ -65,7 +65,7 @@ function Home() {
     const res1 = await api.get("/admin/skilllist/")
     const res3 = await api.get("/admin/projectlist/")
     const res4 = await api.get("/admin/sociallist/")
-    const res5= await api.get("/admin/servicelist/")
+    const res5 = await api.get("/admin/servicelist/")
     setProject(res3.data)
     setForm(res.data);
     setSkill(res1.data)
@@ -74,21 +74,21 @@ function Home() {
     console.log(res.data)
   }
   useEffect(() => {
-  let current = 0;
+    let current = 0;
 
-  const interval = setInterval(() => {
-    current += 5;
+    const interval = setInterval(() => {
+      current += 5;
 
-    setProgress(current);
+      setProgress(current);
 
-    if (current >= 100) {
-      clearInterval(interval);
-    }
-  }, 100);
-  data()
+      if (current >= 100) {
+        clearInterval(interval);
+      }
+    }, 100);
+    data()
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const forming = useRef();
   const [status, setStatus] = useState("");
@@ -324,7 +324,7 @@ function Home() {
 
 
 
-          <form className="contact-left" ref={forming} onSubmit={sendEmail} >
+          <form className="contact-lefts" ref={forming} onSubmit={sendEmail} >
             <h2 className="contact-header">Contact Me</h2>
             <div className="contact-inputs">
               <input className="
@@ -335,10 +335,13 @@ function Home() {
 
               <input className="
             contact-input" type="text" name="message" placeholder="MESSAGE" required />
+              <button className="contact-btn" type="submit"><BsFillSendFill /></button>
 
             </div>
 
-            <button className="contact-btn" type="submit"><BsFillSendFill /></button>
+           
+
+           
           </form>
 
 
@@ -391,25 +394,25 @@ function Home() {
             <div className="right1">
               <h2 className="right-no-header">Services</h2>
               {
-                service?.map((x)=>(
+                service?.map((x) => (
                   <a href="#">{x.service_title}</a>
                 ))
               }
-              
-              
+
+
             </div>
             <div className="right2">
               <h2 className="right-no-header">Contact Me</h2>
 
               <div className="phone">
 
-                  {form?.phone}
+                {form?.phone}
 
               </div>
               <div className="email">{form?.gmail}</div>
               <div className="tiktoks">{form?.tiktok}</div>
             </div>
-            
+
           </div>
         </section>
 

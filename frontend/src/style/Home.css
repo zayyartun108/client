@@ -675,9 +675,11 @@ section {
   /* optional gradient if you want */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.content{
+
+.content {
   width: 40vw;
 }
+
 /* Connector circle on line */
 .timeline-item::after {
   content: '';
@@ -741,15 +743,18 @@ section {
 
   .skill-left {
     height: 30vh;
+    padding: 0;
   }
 
   .skill-right {
     width: 90vw;
-    margin:0px 20px;
+    margin: 0px 20px;
     height: 50vh;
+    padding: 0;
 
   }
-  .content{
+
+  .content {
     width: 100%;
   }
 
@@ -774,7 +779,7 @@ section {
   }
 
   .timeline-item::after {
-    margin-left:10px;
+    margin-left: 10px;
   }
 
 
@@ -808,10 +813,14 @@ section {
 }
 
 .slider {
+  display: flex;
   width: 100%;
   position: relative;
   height: 100%;
   transition: all 0.5s ease;
+  overflow-x: scroll;
+  /* VERY IMPORTANT */
+  scroll-behavior: smooth;
 
 }
 
@@ -955,7 +964,7 @@ section {
     );
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -964,19 +973,23 @@ section {
 
 }
 
-.contact-left {
+.contact-lefts {
 
   width: 40vw;
+
   border-radius: 14px;
   padding: 10px;
+  height: 50vh;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.12);
   /* glass */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
+
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -986,7 +999,7 @@ section {
 }
 
 .contact-inputs {
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -997,7 +1010,7 @@ section {
 
 
 .contact-header {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 1000;
   background: linear-gradient(90deg, var(--primary), var(--bg-main), var(--secondary));
   -webkit-background-clip: text;
@@ -1010,7 +1023,7 @@ section {
 .contact-input {
   padding: 10px;
   outline: none;
-  width: 80%;
+  width: 90%;
   height: 7%;
 
   border-radius: 10px;
@@ -1152,25 +1165,60 @@ section {
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
-    padding: 20px;
+    width: 100vw;
+    justify-content: start;
+
+
   }
 
-  .contact-left {
-    flex: 10;
+  .contact-input {
+    padding: 20px 10px;
+  }
+
+  .contact-lefts {
+    gap: 0;
     width: 100%;
-    height: 80%;
+    height: 40vh;
+    border: 4px solid red;
+    overflow: hidden;
     padding-top: 0px;
     font-size: 20px;
+    justify-content: start;
+    align-items: center;
+  }
+.icon {
+
+
+  width: 50px;
+  height: 50px;
+
+
+}
+
+  .contact-header {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .contact-inputs {
+    width: 100%;
+
+
+    justify-content: start;
+    align-items: center;
+    height: 300px;
+
   }
 
   .contact-right {
     width: 100%;
-    height: 20%;
+    height: 30%;
   }
 
   .contact-btn {
     font-size: 20px;
     height: 7%;
+
   }
 
   .contact-input {
