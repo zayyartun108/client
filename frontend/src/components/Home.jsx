@@ -77,7 +77,7 @@ function Home() {
     let current = 0;
 
     const interval = setInterval(() => {
-      current += 5;
+      current += 2;
 
       setProgress(current);
 

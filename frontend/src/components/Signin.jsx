@@ -50,17 +50,13 @@ function Signin() {
           />
 
           <div className="signin-options">
-            <label>
-              <input type="checkbox" /> Remember me
-            </label>
+            
             <span className="forgot">Forgot password?</span>
           </div>
 
           <button className="signin-btn" type="submit">Login</button>
 
-          <p className="signin-text">
-            Don’t have an account? <span>Sign Up</span>
-          </p>
+        
         </form>
       </div>
     </div>

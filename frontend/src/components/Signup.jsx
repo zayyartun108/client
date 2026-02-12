@@ -84,9 +84,7 @@ function Signup() {
 
                     <button className="signup-btn" type="submit">Sign Up</button>
 
-                    <p className="signup-text">
-                        Already have an account? <span>Login</span>
-                    </p>
+                    
                 </form>
             </div>
         </div>
